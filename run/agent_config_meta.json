@@ -1,0 +1,365 @@
+{
+  "sequelize": {
+    "dialect": "/Users/irvin/github/pro-json-schema/config/config.default.js",
+    "database": "/Users/irvin/github/pro-json-schema/config/config.default.js",
+    "host": "/Users/irvin/github/pro-json-schema/config/config.default.js",
+    "port": "/Users/irvin/github/pro-json-schema/config/config.default.js",
+    "username": "/Users/irvin/github/pro-json-schema/config/config.default.js",
+    "password": "/Users/irvin/github/pro-json-schema/config/config.default.js"
+  },
+  "security": {
+    "csrf": {
+      "ignore": "/Users/irvin/github/pro-json-schema/config/config.default.js",
+      "enable": "/Users/irvin/github/pro-json-schema/node_modules/egg-security/config/config.default.js",
+      "useSession": "/Users/irvin/github/pro-json-schema/node_modules/egg-security/config/config.default.js",
+      "ignoreJSON": "/Users/irvin/github/pro-json-schema/node_modules/egg-security/config/config.default.js",
+      "cookieName": "/Users/irvin/github/pro-json-schema/node_modules/egg-security/config/config.default.js",
+      "sessionName": "/Users/irvin/github/pro-json-schema/node_modules/egg-security/config/config.default.js",
+      "headerName": "/Users/irvin/github/pro-json-schema/node_modules/egg-security/config/config.default.js",
+      "bodyName": "/Users/irvin/github/pro-json-schema/node_modules/egg-security/config/config.default.js",
+      "queryName": "/Users/irvin/github/pro-json-schema/node_modules/egg-security/config/config.default.js"
+    },
+    "domainWhiteList": "/Users/irvin/github/pro-json-schema/node_modules/egg-security/config/config.default.js",
+    "protocolWhiteList": "/Users/irvin/github/pro-json-schema/node_modules/egg-security/config/config.default.js",
+    "defaultMiddleware": "/Users/irvin/github/pro-json-schema/node_modules/egg-security/config/config.default.js",
+    "xframe": {
+      "enable": "/Users/irvin/github/pro-json-schema/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/irvin/github/pro-json-schema/node_modules/egg-security/config/config.default.js"
+    },
+    "hsts": {
+      "enable": "/Users/irvin/github/pro-json-schema/node_modules/egg-security/config/config.local.js",
+      "maxAge": "/Users/irvin/github/pro-json-schema/node_modules/egg-security/config/config.default.js",
+      "includeSubdomains": "/Users/irvin/github/pro-json-schema/node_modules/egg-security/config/config.default.js"
+    },
+    "dta": {
+      "enable": "/Users/irvin/github/pro-json-schema/node_modules/egg-security/config/config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "/Users/irvin/github/pro-json-schema/node_modules/egg-security/config/config.default.js"
+    },
+    "noopen": {
+      "enable": "/Users/irvin/github/pro-json-schema/node_modules/egg-security/config/config.default.js"
+    },
+    "nosniff": {
+      "enable": "/Users/irvin/github/pro-json-schema/node_modules/egg-security/config/config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "/Users/irvin/github/pro-json-schema/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/irvin/github/pro-json-schema/node_modules/egg-security/config/config.default.js"
+    },
+    "xssProtection": {
+      "enable": "/Users/irvin/github/pro-json-schema/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/irvin/github/pro-json-schema/node_modules/egg-security/config/config.default.js"
+    },
+    "csp": {
+      "enable": "/Users/irvin/github/pro-json-schema/node_modules/egg-security/config/config.default.js",
+      "policy": "/Users/irvin/github/pro-json-schema/node_modules/egg-security/config/config.default.js"
+    },
+    "ssrf": {
+      "ipBlackList": "/Users/irvin/github/pro-json-schema/node_modules/egg-security/config/config.default.js",
+      "checkAddress": "/Users/irvin/github/pro-json-schema/node_modules/egg-security/config/config.default.js"
+    }
+  },
+  "logger": {
+    "dir": "/Users/irvin/github/pro-json-schema/config/config.default.js",
+    "encoding": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+    "env": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+    "level": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+    "consoleLevel": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+    "disableConsoleAfterReady": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+    "outputJSON": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+    "buffer": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+    "appLogName": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+    "coreLogName": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+    "agentLogName": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+    "errorLogName": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+    "coreLogger": {
+      "consoleLevel": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.local.js"
+    },
+    "allowDebugAtProd": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js"
+  },
+  "view": {
+    "root": "/Users/irvin/github/pro-json-schema/config/config.default.js",
+    "mapping": {
+      ".js": "/Users/irvin/github/pro-json-schema/config/config.default.js"
+    },
+    "cache": "/Users/irvin/github/pro-json-schema/node_modules/egg-view/config/config.local.js",
+    "defaultExtension": "/Users/irvin/github/pro-json-schema/node_modules/egg-view/config/config.default.js",
+    "defaultViewEngine": "/Users/irvin/github/pro-json-schema/node_modules/egg-view/config/config.default.js"
+  },
+  "assets": {
+    "publicPath": "/Users/irvin/github/pro-json-schema/config/config.default.js",
+    "devServer": {
+      "command": "/Users/irvin/github/pro-json-schema/config/config.default.js",
+      "port": "/Users/irvin/github/pro-json-schema/config/config.default.js",
+      "env": {
+        "BROWSER": "/Users/irvin/github/pro-json-schema/config/config.default.js",
+        "DISABLE_ESLINT": "/Users/irvin/github/pro-json-schema/config/config.default.js",
+        "SOCKET_SERVER": "/Users/irvin/github/pro-json-schema/config/config.default.js",
+        "PUBLIC_PATH": "/Users/irvin/github/pro-json-schema/config/config.default.js"
+      },
+      "debug": "/Users/irvin/github/pro-json-schema/config/config.default.js",
+      "enable": "/Users/irvin/github/pro-json-schema/node_modules/egg-view-assets/config/config.default.js",
+      "timeout": "/Users/irvin/github/pro-json-schema/node_modules/egg-view-assets/config/config.default.js",
+      "waitStart": "/Users/irvin/github/pro-json-schema/node_modules/egg-view-assets/config/config.default.js"
+    },
+    "isLocalOrUnittest": "/Users/irvin/github/pro-json-schema/node_modules/egg-view-assets/config/config.default.js",
+    "url": "/Users/irvin/github/pro-json-schema/node_modules/egg-view-assets/config/config.default.js",
+    "templatePath": "/Users/irvin/github/pro-json-schema/node_modules/egg-view-assets/config/config.default.js",
+    "templateViewEngine": "/Users/irvin/github/pro-json-schema/node_modules/egg-view-assets/config/config.default.js",
+    "contextKey": "/Users/irvin/github/pro-json-schema/node_modules/egg-view-assets/config/config.default.js"
+  },
+  "keys": "/Users/irvin/github/pro-json-schema/config/config.default.js",
+  "middleware": "/Users/irvin/github/pro-json-schema/config/config.default.js",
+  "session": {
+    "maxAge": "/Users/irvin/github/pro-json-schema/node_modules/egg-session/config/config.default.js",
+    "key": "/Users/irvin/github/pro-json-schema/node_modules/egg-session/config/config.default.js",
+    "httpOnly": "/Users/irvin/github/pro-json-schema/node_modules/egg-session/config/config.default.js",
+    "encrypt": "/Users/irvin/github/pro-json-schema/node_modules/egg-session/config/config.default.js"
+  },
+  "helper": {
+    "shtml": "/Users/irvin/github/pro-json-schema/node_modules/egg-security/config/config.default.js"
+  },
+  "jsonp": {
+    "limit": "/Users/irvin/github/pro-json-schema/node_modules/egg-jsonp/config/config.default.js",
+    "callback": "/Users/irvin/github/pro-json-schema/node_modules/egg-jsonp/config/config.default.js",
+    "csrf": "/Users/irvin/github/pro-json-schema/node_modules/egg-jsonp/config/config.default.js"
+  },
+  "onerror": {
+    "errorPageUrl": "/Users/irvin/github/pro-json-schema/node_modules/egg-onerror/config/config.default.js",
+    "appErrorFilter": "/Users/irvin/github/pro-json-schema/node_modules/egg-onerror/config/config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "/Users/irvin/github/pro-json-schema/node_modules/egg-i18n/config/config.default.js",
+    "dirs": "/Users/irvin/github/pro-json-schema/node_modules/egg-i18n/config/config.default.js",
+    "queryField": "/Users/irvin/github/pro-json-schema/node_modules/egg-i18n/config/config.default.js",
+    "cookieField": "/Users/irvin/github/pro-json-schema/node_modules/egg-i18n/config/config.default.js",
+    "cookieMaxAge": "/Users/irvin/github/pro-json-schema/node_modules/egg-i18n/config/config.default.js"
+  },
+  "watcher": {
+    "type": "/Users/irvin/github/pro-json-schema/node_modules/egg-watcher/config/config.local.js",
+    "eventSources": {
+      "default": "/Users/irvin/github/pro-json-schema/node_modules/egg-watcher/config/config.default.js",
+      "development": "/Users/irvin/github/pro-json-schema/node_modules/egg-watcher/config/config.default.js"
+    }
+  },
+  "multipart": {
+    "autoFields": "/Users/irvin/github/pro-json-schema/node_modules/egg-multipart/config/config.default.js",
+    "defaultCharset": "/Users/irvin/github/pro-json-schema/node_modules/egg-multipart/config/config.default.js",
+    "fieldNameSize": "/Users/irvin/github/pro-json-schema/node_modules/egg-multipart/config/config.default.js",
+    "fieldSize": "/Users/irvin/github/pro-json-schema/node_modules/egg-multipart/config/config.default.js",
+    "fields": "/Users/irvin/github/pro-json-schema/node_modules/egg-multipart/config/config.default.js",
+    "fileSize": "/Users/irvin/github/pro-json-schema/node_modules/egg-multipart/config/config.default.js",
+    "files": "/Users/irvin/github/pro-json-schema/node_modules/egg-multipart/config/config.default.js",
+    "fileExtensions": "/Users/irvin/github/pro-json-schema/node_modules/egg-multipart/config/config.default.js",
+    "whitelist": "/Users/irvin/github/pro-json-schema/node_modules/egg-multipart/config/config.default.js"
+  },
+  "development": {
+    "watchDirs": "/Users/irvin/github/pro-json-schema/node_modules/egg-development/config/config.default.js",
+    "ignoreDirs": "/Users/irvin/github/pro-json-schema/node_modules/egg-development/config/config.default.js",
+    "fastReady": "/Users/irvin/github/pro-json-schema/node_modules/egg-development/config/config.default.js",
+    "reloadOnDebug": "/Users/irvin/github/pro-json-schema/node_modules/egg-development/config/config.default.js",
+    "overrideDefault": "/Users/irvin/github/pro-json-schema/node_modules/egg-development/config/config.default.js"
+  },
+  "customLogger": {
+    "scheduleLogger": {
+      "consoleLevel": "/Users/irvin/github/pro-json-schema/node_modules/egg-schedule/config/config.default.js",
+      "file": "/Users/irvin/github/pro-json-schema/node_modules/egg-schedule/config/config.default.js"
+    }
+  },
+  "logrotator": {
+    "filesRotateByHour": "/Users/irvin/github/pro-json-schema/node_modules/egg-logrotator/config/config.default.js",
+    "hourDelimiter": "/Users/irvin/github/pro-json-schema/node_modules/egg-logrotator/config/config.default.js",
+    "filesRotateBySize": "/Users/irvin/github/pro-json-schema/node_modules/egg-logrotator/config/config.default.js",
+    "maxFileSize": "/Users/irvin/github/pro-json-schema/node_modules/egg-logrotator/config/config.default.js",
+    "maxFiles": "/Users/irvin/github/pro-json-schema/node_modules/egg-logrotator/config/config.default.js",
+    "rotateDuration": "/Users/irvin/github/pro-json-schema/node_modules/egg-logrotator/config/config.default.js",
+    "maxDays": "/Users/irvin/github/pro-json-schema/node_modules/egg-logrotator/config/config.default.js"
+  },
+  "static": {
+    "prefix": "/Users/irvin/github/pro-json-schema/node_modules/egg-static/config/config.default.js",
+    "dir": "/Users/irvin/github/pro-json-schema/node_modules/egg-static/config/config.default.js",
+    "dynamic": "/Users/irvin/github/pro-json-schema/node_modules/egg-static/config/config.default.js",
+    "preload": "/Users/irvin/github/pro-json-schema/node_modules/egg-static/config/config.default.js",
+    "buffer": "/Users/irvin/github/pro-json-schema/node_modules/egg-static/config/config.default.js",
+    "maxFiles": "/Users/irvin/github/pro-json-schema/node_modules/egg-static/config/config.default.js"
+  },
+  "env": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+  "name": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+  "proxy": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+  "protocolHeaders": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+  "ipHeaders": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+  "hostHeaders": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+  "pkg": {
+    "name": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+    "version": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+    "description": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+    "private": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+    "scripts": {
+      "precommit": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "dev": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "start": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "start:no-proxy": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "build": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "site": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "analyze": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "lint:style": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "lint": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "lint:fix": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "lint-staged": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "lint-staged:js": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "test": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "test:component": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "test:all": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "prettier": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js"
+    },
+    "dependencies": {
+      "@antv/data-set": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "@babel/polyfill": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "antd": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "babel-plugin-transform-decorators-legacy": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "babel-runtime": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "bizcharts": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "bizcharts-plugin-slider": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "classnames": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "dva": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "dva-loading": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "egg": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "egg-scripts": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "egg-validate": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "egg-view-assets": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "enquire-js": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "less": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "lodash": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "lodash-decorators": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "moment": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "numeral": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "omit.js": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "path-to-regexp": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "prop-types": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "qs": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "rc-drawer-menu": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "react": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "react-container-query": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "react-document-title": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "react-dom": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "react-fittext": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "rollbar": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "url-polyfill": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js"
+    },
+    "devDependencies": {
+      "babel-eslint": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "babel-plugin-dva-hmr": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "babel-plugin-import": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "babel-plugin-module-resolver": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "cross-env": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "cross-port-killer": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "egg-bin": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "enzyme": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "eslint": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "eslint-config-airbnb": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "eslint-config-egg": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "eslint-config-prettier": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "eslint-plugin-babel": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "eslint-plugin-compat": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "eslint-plugin-import": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "eslint-plugin-jsx-a11y": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "eslint-plugin-markdown": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "eslint-plugin-react": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "gh-pages": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "husky": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "lint-staged": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "mockjs": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "prettier": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "pro-download": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "redbox-react": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "regenerator-runtime": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "roadhog": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "roadhog-api-doc": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "stylelint": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "stylelint-config-prettier": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "stylelint-config-standard": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js"
+    },
+    "optionalDependencies": {
+      "puppeteer": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js"
+    },
+    "lint-staged": {
+      "**/*.{js,jsx,less}": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "**/*.{js,jsx}": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "**/*.less": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js"
+    },
+    "engines": {
+      "node": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js"
+    },
+    "browserslist": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js"
+  },
+  "baseDir": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+  "HOME": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+  "rundir": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+  "dump": {
+    "ignore": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js"
+  },
+  "confusedConfigurations": {
+    "bodyparser": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+    "notFound": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+    "sitefile": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+    "middlewares": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+    "httpClient": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js"
+  },
+  "bodyParser": {
+    "enable": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+    "formLimit": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+    "jsonLimit": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+    "strict": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+    "queryString": {
+      "arrayLimit": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "depth": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "parameterLimit": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js"
+    }
+  },
+  "httpclient": {
+    "enableDNSCache": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+    "dnsCacheMaxLength": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+    "dnsCacheMaxAge": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+    "request": {
+      "timeout": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "freeSocketKeepAliveTimeout": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "freeSocketKeepAliveTimeout": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js"
+    }
+  },
+  "meta": {
+    "enable": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+    "logging": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js"
+  },
+  "coreMiddleware": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+  "workerStartTimeout": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+  "cluster": {
+    "listen": {
+      "path": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "port": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "hostname": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js"
+    }
+  },
+  "clusterClient": {
+    "maxWaitTime": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+    "responseTimeout": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js"
+  },
+  "onClientError": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js"
+}
