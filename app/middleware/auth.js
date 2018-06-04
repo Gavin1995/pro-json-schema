@@ -5,7 +5,7 @@ const response = require('../util/response');
 
 module.exports = () => {
   return async function auth(ctx, next) {
-    if (ctx.url === '/api/user-login' || ctx.url.substr(0, 4) !== '/api' || ctx.url.substr(0, 4) !== '/now') {
+    if (ctx.url === '/api/user-login' || ctx.url.substr(0, 4) !== '/api') {
       await next();
       return;
     }

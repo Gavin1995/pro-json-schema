@@ -36,8 +36,8 @@ function RouterConfig({ history, app }) {
             // component={BasicLayout}
             render={props => <BasicLayout {...props} />}
             // authority={havePermission}
-            authority={['admin', 'user']}
-            redirectPath="/user/login"
+            // authority={['admin', 'user']}
+            // redirectPath="/user/login"
           />
         </Switch>
       </ConnectedRouter>
