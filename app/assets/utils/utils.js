@@ -159,3 +159,8 @@ const reg = /(((^https?:(?:\/\/)?)(?:[-;:&=\+\$,\w]+@)?[A-Za-z0-9.-]+|(?:www.|[-
 export function isUrl(path) {
   return reg.test(path);
 }
+
+// base64 decode
+export function b64DecodeUnicode(str) {
+  return decodeURIComponent(atob(str).split('').map(c => `%00${c.charCodeAt(0).toString(16)}`.slice(-2)).join(''));
+}

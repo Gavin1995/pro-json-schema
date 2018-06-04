@@ -3,6 +3,8 @@ import { routerRedux, Route, Switch } from 'dva/router';
 import { LocaleProvider, Spin } from 'antd';
 import zhCN from 'antd/lib/locale-provider/zh_CN';
 import dynamic from 'dva/dynamic';
+// import axios from 'axios';
+
 import { getRouterData } from './common/router';
 import Authorized from './utils/Authorized';
 import styles from './index.less';
@@ -12,6 +14,13 @@ const { AuthorizedRoute } = Authorized;
 dynamic.setDefaultLoadingComponent(() => {
   return <Spin size="large" className={styles.globalSpin} />;
 });
+
+// const havePermission = () => {
+//   return axios.get('/now/user-checkAuth').then((res) => {
+//     console.log(res.data && res.data.success);
+//     return res.data && res.data.success;
+//   });
+// };
 
 function RouterConfig({ history, app }) {
   const routerData = getRouterData(app);
@@ -24,7 +33,9 @@ function RouterConfig({ history, app }) {
           <Route path="/user" component={UserLayout} />
           <AuthorizedRoute
             path="/"
+            // component={BasicLayout}
             render={props => <BasicLayout {...props} />}
+            // authority={havePermission}
             authority={['admin', 'user']}
             redirectPath="/user/login"
           />

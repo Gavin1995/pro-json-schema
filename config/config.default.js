@@ -6,7 +6,7 @@ module.exports = appInfo => {
   const config = {
     sequelize: {
       dialect: 'mysql',
-      database: 'chaowenyi_trade',
+      database: 'pjs_json_data_manager',
       host: '127.0.0.1',
       port: '3306',
       username: 'root',
@@ -15,6 +15,14 @@ module.exports = appInfo => {
     security: {
       csrf: {
         ignore: () => true,
+      },
+    },
+    redis: {
+      client: {
+        port: 6379,
+        host: '127.0.0.1',
+        password: null,
+        db: 0,
       },
     },
     logger: {
@@ -48,7 +56,9 @@ module.exports = appInfo => {
   config.keys = appInfo.name + '_1525738779809_7566';
 
   // add your config here
-  config.middleware = [];
+  config.middleware = [
+    'auth',
+  ];
 
   return config;
 };

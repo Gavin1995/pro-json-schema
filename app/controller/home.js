@@ -1,6 +1,10 @@
 'use strict';
 
 const Controller = require('egg').Controller;
+const moment = require('moment');
+const cookie = require('cookie');
+
+const response = require('../util/response');
 
 class HomeController extends Controller {
   async index() {
@@ -17,6 +21,18 @@ class HomeController extends Controller {
     });
     ctx.body = res.data;
     ctx.status = res.status;
+  }
+
+  test() {
+    const { ctx } = this;
+
+    const expiration = moment(moment().add(30, 'd').format('YYYY-MM-DD 00:00:00')).unix();
+    ctx.cookies.set('token', 'ssasas', {
+      httpOnly: true,
+      path: '/',
+      expires: moment.utc(moment().add(30, 'd').format('YYYY-MM-DD 00:00:00')).toDate(),
+    });
+    ctx.body = response.success();
   }
 }
 

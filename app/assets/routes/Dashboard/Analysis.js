@@ -247,7 +247,7 @@ export default class Analysis extends Component {
     return (
       <Fragment>
         <Row gutter={24}>
-          <Col {...topColResponsiveProps}>
+          <Col {...topColResponsiveProps} md={12}>
             <ChartCard
               bordered={false}
               title="总销售额"

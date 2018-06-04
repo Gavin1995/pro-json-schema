@@ -37,20 +37,21 @@
       "UNLOCK",
       "UNSUBSCRIBE"
     ],
-    "paramNames": [
-      {
-        "name": 0,
-        "prefix": "/",
-        "delimiter": "/",
-        "optional": false,
-        "repeat": false,
-        "partial": false,
-        "asterisk": true,
-        "pattern": ".*"
-      }
+    "paramNames": [],
+    "path": "/api/current-user",
+    "regexp": "/^\\/api\\/current-user(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
     ],
-    "path": "/api/*",
-    "regexp": "/^\\/api\\/((?:.*))(?:\\/(?=$))?$/",
+    "paramNames": [],
+    "path": "/api/user-login",
+    "regexp": "/^\\/api\\/user-login(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -64,6 +65,82 @@
     "paramNames": [],
     "path": "/",
     "regexp": "/^(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/now/currentUser",
+    "regexp": "/^\\/now\\/currentUser(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/now/test",
+    "regexp": "/^\\/now\\/test(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/now/user-create",
+    "regexp": "/^\\/now\\/user-create(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/now/user-login",
+    "regexp": "/^\\/now\\/user-login(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/now/user-logout",
+    "regexp": "/^\\/now\\/user-logout(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/now/user-checkAuth",
+    "regexp": "/^\\/now\\/user-checkAuth(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]

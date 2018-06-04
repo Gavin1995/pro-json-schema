@@ -11,3 +11,12 @@ exports.assets = {
   enable: true,
   package: 'egg-view-assets',
 };
+
+exports.redis = {
+  package: 'egg-redis',
+};
+
+exports.sequelize = {
+  enable: true,
+  package: 'egg-sequelize',
+};

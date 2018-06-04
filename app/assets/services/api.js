@@ -1,6 +1,15 @@
 import { stringify } from 'qs';
 import request from '../utils/request';
 
+export async function login(params) {
+  return request('/now/user-login', {
+    method: 'POST',
+    body: {
+      ...params,
+    },
+  });
+}
+
 export async function queryProjectNotice() {
   return request('/api/project/notice');
 }

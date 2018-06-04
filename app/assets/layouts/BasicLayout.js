@@ -100,7 +100,7 @@ class BasicLayout extends React.PureComponent {
     };
   }
   componentDidMount() {
-    this.enquireHandler = enquireScreen(mobile => {
+    this.enquireHandler = enquireScreen((mobile) => {
       this.setState({
         isMobile: mobile,
       });
@@ -115,7 +115,7 @@ class BasicLayout extends React.PureComponent {
   getPageTitle() {
     const { routerData, location } = this.props;
     const { pathname } = location;
-    let title = 'Ant Design Pro';
+    let title = 'Pro Json Schema';
     let currRouterData = null;
     // match params path
     Object.keys(routerData).forEach(key => {
@@ -124,7 +124,7 @@ class BasicLayout extends React.PureComponent {
       }
     });
     if (currRouterData && currRouterData.name) {
-      title = `${currRouterData.name} - Ant Design Pro`;
+      title = `${currRouterData.name} - Pro Json Schema`;
     }
     return title;
   }
@@ -242,27 +242,21 @@ class BasicLayout extends React.PureComponent {
             <GlobalFooter
               links={[
                 {
-                  key: 'Pro 首页',
-                  title: 'Pro 首页',
-                  href: 'http://pro.ant.design',
-                  blankTarget: true,
-                },
-                {
                   key: 'github',
                   title: <Icon type="github" />,
-                  href: 'https://github.com/ant-design/ant-design-pro',
+                  href: 'https://github.com/Gavin1995/pro-json-schema',
                   blankTarget: true,
                 },
-                {
-                  key: 'Ant Design',
-                  title: 'Ant Design',
-                  href: 'http://ant.design',
-                  blankTarget: true,
-                },
+                // {
+                //   key: 'Ant Design',
+                //   title: 'Ant Design',
+                //   href: 'http://ant.design',
+                //   blankTarget: true,
+                // },
               ]}
               copyright={
                 <Fragment>
-                  Copyright <Icon type="copyright" /> 2018 蚂蚁金服体验技术部出品
+                  Copyright <Icon type="copyright" /> 2018 Gavin
                 </Fragment>
               }
             />

@@ -60,6 +60,17 @@
       "checkAddress": "/Users/irvin/github/pro-json-schema/node_modules/egg-security/config/config.default.js"
     }
   },
+  "redis": {
+    "client": {
+      "port": "/Users/irvin/github/pro-json-schema/config/config.default.js",
+      "host": "/Users/irvin/github/pro-json-schema/config/config.default.js",
+      "password": "/Users/irvin/github/pro-json-schema/config/config.default.js",
+      "db": "/Users/irvin/github/pro-json-schema/config/config.default.js"
+    },
+    "default": "/Users/irvin/github/pro-json-schema/node_modules/egg-redis/config/config.default.js",
+    "app": "/Users/irvin/github/pro-json-schema/node_modules/egg-redis/config/config.default.js",
+    "agent": "/Users/irvin/github/pro-json-schema/node_modules/egg-redis/config/config.default.js"
+  },
   "logger": {
     "dir": "/Users/irvin/github/pro-json-schema/config/config.default.js",
     "encoding": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
@@ -196,7 +207,6 @@
     "description": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
     "private": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
     "scripts": {
-      "precommit": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
       "dev": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
       "start": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
       "start:no-proxy": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
@@ -217,6 +227,7 @@
       "@antv/data-set": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
       "@babel/polyfill": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
       "antd": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "axios": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
       "babel-plugin-transform-decorators-legacy": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
       "babel-runtime": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
       "bizcharts": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
@@ -225,14 +236,18 @@
       "dva": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
       "dva-loading": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
       "egg": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "egg-redis": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
       "egg-scripts": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "egg-sequelize": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
       "egg-validate": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
       "egg-view-assets": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
       "enquire-js": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "jsonwebtoken": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
       "less": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
       "lodash": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
       "lodash-decorators": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
       "moment": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "mysql2": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
       "numeral": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
       "omit.js": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
       "path-to-regexp": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
