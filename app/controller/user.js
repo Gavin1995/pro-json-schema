@@ -103,12 +103,16 @@ class UserController extends Controller {
       return;
     }
     ctx.request.body.password = utils.md5(ctx.request.body.password);
-    const data = await ctx.model.User.create(ctx.request.body);
+    const { username, password } = ctx.request.body;
+    const data = await ctx.model.User.create({
+      username,
+      password,
+    });
     if (!data || !data.dataValues) {
       ctx.body = response.simpleError('注册失败，请重试');
       return;
     }
-    ctx.body = response.simpleError('注册成功');
+    ctx.body = response.success();
   }
 }
 

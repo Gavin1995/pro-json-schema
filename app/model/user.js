@@ -40,12 +40,11 @@ module.exports = app => {
     timestamps: false,
   });
 
-  // User.add = async user => {
-  //   return await this.create(user);
-  // };
-
   User.findByUsername = async username => {
     return await User.findOne({
+      attributes: {
+        exclude: [ 'password', 'soft_delete', 'create_time', 'update_time', 'create_guid' ],
+      },
       where: {
         username,
         soft_delete: 0,
@@ -55,6 +54,9 @@ module.exports = app => {
 
   User.findByUserId = async userId => {
     return await User.findOne({
+      attributes: {
+        exclude: [ 'password', 'soft_delete', 'create_time', 'update_time', 'create_guid' ],
+      },
       where: {
         id: userId,
         soft_delete: 0,
@@ -64,6 +66,9 @@ module.exports = app => {
 
   User.findByPhoneNumber = async phone_number => {
     return await User.findOne({
+      attributes: {
+        exclude: [ 'password', 'soft_delete', 'create_time', 'update_time', 'create_guid' ],
+      },
       where: {
         phone_number,
         soft_delete: 0,
@@ -73,8 +78,26 @@ module.exports = app => {
 
   User.findByLogin = async login => {
     return await this.findOne({
+      attributes: {
+        exclude: [ 'password', 'soft_delete', 'create_time', 'update_time', 'create_guid' ],
+      },
       where: {
         login,
+        soft_delete: 0,
+      },
+    });
+  };
+
+  // 根据用户ID批量查询
+  User.findUsersByIds = async ids => {
+    return await User.findAll({
+      attributes: {
+        exclude: [ 'password', 'soft_delete', 'create_time', 'update_time', 'create_guid' ],
+      },
+      where: {
+        id: {
+          $in: ids,
+        },
         soft_delete: 0,
       },
     });
