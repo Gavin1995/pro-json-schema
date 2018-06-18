@@ -52,6 +52,16 @@ module.exports = app => {
     });
   };
 
+  User.findPasswordByUsername = async username => {
+    return await User.findOne({
+      attributes: [ 'id', 'password' ],
+      where: {
+        username,
+        soft_delete: 0,
+      },
+    });
+  };
+
   User.findByUserId = async userId => {
     return await User.findOne({
       attributes: {
@@ -95,9 +105,18 @@ module.exports = app => {
         exclude: [ 'password', 'soft_delete', 'create_time', 'update_time', 'create_guid' ],
       },
       where: {
-        id: {
-          $in: ids,
-        },
+        id: ids,
+        soft_delete: 0,
+      },
+    });
+  };
+
+  User.findAllUser = async () => {
+    return await User.findAll({
+      attributes: {
+        exclude: [ 'password', 'soft_delete', 'create_time', 'update_time', 'create_guid' ],
+      },
+      where: {
         soft_delete: 0,
       },
     });

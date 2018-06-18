@@ -1,6 +1,7 @@
 'use strict';
 
 const path = require('path');
+const response = require('../app/util/response');
 
 module.exports = appInfo => {
   const config = {
@@ -11,6 +12,7 @@ module.exports = appInfo => {
       port: '3306',
       username: 'root',
       password: 'irvin1234.',
+      timezone: '+08:00',
     },
     security: {
       csrf: {
@@ -59,6 +61,14 @@ module.exports = appInfo => {
   config.middleware = [
     'auth',
   ];
+
+  config.onerror = {
+    all(err, ctx) {
+      ctx.status = 500;
+      ctx.set('Content-Type', 'application/json');
+      ctx.body = JSON.stringify(response.simpleError('系统错误，请重试'));
+    },
+  };
 
   return config;
 };

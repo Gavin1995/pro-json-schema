@@ -59,6 +59,36 @@ module.exports = app => {
     });
   };
 
+  Application.findListByUserIdAndFilter = async (userId, appIds, page, name = '', pageSize = 15) => {
+    return await Application.findAndCountAll({
+      attributes: {
+        exclude: [ 'soft_delete', 'create_time', 'update_time', 'create_guid' ],
+      },
+      where: {
+        $or: [
+          {
+            name_cn: {
+              $like: `%${name}%`,
+            },
+          },
+          {
+            name_en: {
+              $like: `%${name}%`,
+            },
+          },
+        ],
+        id: appIds,
+        soft_delete: 0,
+      },
+      offset: (page - 1) * pageSize,
+      limit: pageSize,
+      order: [
+        [ 'update_time', 'DESC' ],
+      ],
+      raw: true,
+    });
+  };
+
   Application.findOneByName = async (name_cn, name_en) => {
     return await Application.findOne({
       where: {
@@ -70,6 +100,16 @@ module.exports = app => {
             name_en,
           },
         ],
+      },
+    });
+  };
+
+  Application.findIdByAppIdAndOwnerId = async (app_id, owner_id) => {
+    return await Application.findOne({
+      where: {
+        id: app_id,
+        owner_id,
+        soft_delete: 0,
       },
     });
   };

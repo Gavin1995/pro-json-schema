@@ -10,6 +10,7 @@ const validates = require('../util/validates');
 const response = require('../util/response');
 
 class UserController extends Controller {
+  // [need]
   async login() {
     const { ctx } = this;
     ctx.validate({
@@ -17,7 +18,7 @@ class UserController extends Controller {
       password: validates.loginPassword,
     });
 
-    const data = await ctx.model.User.findByUsername(ctx.request.body.username);
+    const data = await ctx.model.User.findPasswordByUsername(ctx.request.body.username);
     if (!data || !data.dataValues) {
       // 不存在该用户名
       ctx.body = response.simpleError('用户名或密码不正确');
@@ -43,6 +44,16 @@ class UserController extends Controller {
       expires: moment.utc(moment().add(30, 'd').format('YYYY-MM-DD 00:00:00')).toDate(),
     });
     ctx.body = response.success();
+  }
+
+  async all() {
+    const { ctx } = this;
+    const allRes = await ctx.model.User.findAllUser();
+    const res = allRes.map(item => ({
+      user_id: item.id,
+      real_name: item.real_name,
+    }));
+    ctx.body = response.success(res);
   }
 
   async currentUser() {

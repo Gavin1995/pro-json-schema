@@ -5,7 +5,8 @@
     "host": "/Users/irvin/github/pro-json-schema/config/config.default.js",
     "port": "/Users/irvin/github/pro-json-schema/config/config.default.js",
     "username": "/Users/irvin/github/pro-json-schema/config/config.default.js",
-    "password": "/Users/irvin/github/pro-json-schema/config/config.default.js"
+    "password": "/Users/irvin/github/pro-json-schema/config/config.default.js",
+    "timezone": "/Users/irvin/github/pro-json-schema/config/config.default.js"
   },
   "security": {
     "csrf": {
@@ -122,6 +123,11 @@
   },
   "keys": "/Users/irvin/github/pro-json-schema/config/config.default.js",
   "middleware": "/Users/irvin/github/pro-json-schema/config/config.default.js",
+  "onerror": {
+    "all": "/Users/irvin/github/pro-json-schema/config/config.default.js",
+    "errorPageUrl": "/Users/irvin/github/pro-json-schema/node_modules/egg-onerror/config/config.default.js",
+    "appErrorFilter": "/Users/irvin/github/pro-json-schema/node_modules/egg-onerror/config/config.default.js"
+  },
   "session": {
     "maxAge": "/Users/irvin/github/pro-json-schema/node_modules/egg-session/config/config.default.js",
     "key": "/Users/irvin/github/pro-json-schema/node_modules/egg-session/config/config.default.js",
@@ -135,10 +141,6 @@
     "limit": "/Users/irvin/github/pro-json-schema/node_modules/egg-jsonp/config/config.default.js",
     "callback": "/Users/irvin/github/pro-json-schema/node_modules/egg-jsonp/config/config.default.js",
     "csrf": "/Users/irvin/github/pro-json-schema/node_modules/egg-jsonp/config/config.default.js"
-  },
-  "onerror": {
-    "errorPageUrl": "/Users/irvin/github/pro-json-schema/node_modules/egg-onerror/config/config.default.js",
-    "appErrorFilter": "/Users/irvin/github/pro-json-schema/node_modules/egg-onerror/config/config.default.js"
   },
   "i18n": {
     "defaultLocale": "/Users/irvin/github/pro-json-schema/node_modules/egg-i18n/config/config.default.js",
@@ -242,6 +244,7 @@
       "egg-validate": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
       "egg-view-assets": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
       "enquire-js": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
+      "joi": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
       "jsonwebtoken": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
       "less": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",
       "lodash": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/config.default.js",

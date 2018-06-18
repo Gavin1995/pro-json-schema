@@ -72,7 +72,8 @@
     },
     "onerror": {
       "errorPageUrl": "",
-      "appErrorFilter": null
+      "appErrorFilter": null,
+      "all": "<Function all>"
     },
     "i18n": {
       "defaultLocale": "en_US",
@@ -177,7 +178,8 @@
       "host": "127.0.0.1",
       "port": "3306",
       "username": "root",
-      "password": "<String len: 10>"
+      "password": "<String len: 10>",
+      "timezone": "+08:00"
     },
     "env": "local",
     "name": "ant-design-pro",
@@ -227,9 +229,10 @@
         "egg-validate": "^1.0.0",
         "egg-view-assets": "^1.1.2",
         "enquire-js": "^0.2.1",
+        "joi": "^13.4.0",
         "jsonwebtoken": "^8.2.1",
         "less": "2.7.2",
-        "lodash": "^4.17.4",
+        "lodash": "^4.17.10",
         "lodash-decorators": "^4.4.1",
         "moment": "^2.19.1",
         "mysql2": "^1.5.3",
@@ -545,17 +548,6 @@
       "from": "/Users/irvin/github/pro-json-schema/node_modules/egg/config/plugin.js",
       "path": "/Users/irvin/github/pro-json-schema/node_modules/egg-view",
       "version": "2.1.0"
-    },
-    "validate": {
-      "package": "egg-validate",
-      "enable": true,
-      "name": "validate",
-      "dependencies": [],
-      "optionalDependencies": [],
-      "env": [],
-      "from": "/Users/irvin/github/pro-json-schema/config/plugin.js",
-      "path": "/Users/irvin/github/pro-json-schema/node_modules/egg-validate",
-      "version": "1.0.0"
     },
     "assets": {
       "enable": true,
